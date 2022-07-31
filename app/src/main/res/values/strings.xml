@@ -11,4 +11,5 @@
     <string name="txt_open_link">Open Link</string>
 
     <string name="error_network">Network error.</string>
+    <string name="txt_network_error">Network error! Please, try again later.</string>
 </resources>

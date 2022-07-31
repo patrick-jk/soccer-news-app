@@ -31,8 +31,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivThumbnail"
-            tools:text="Ferroviária vence Palmeiras" />
+            app:layout_constraintTop_toBottomOf="@+id/ivThumbnail" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvDescription"
@@ -43,11 +42,10 @@
             android:layout_marginEnd="@dimen/default_margin"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-            tools:text="As meninas da Ferrinha derrotaram o Palmeiras no último domingo." />
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btOpenLink"
+            android:id="@+id/btnOpenLink"
             style="?attr/borderlessButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,35 +57,30 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
 
-        <ImageView
-            android:id="@+id/ivFavorite"
+        <ImageButton
+            android:id="@+id/ibFavorite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/default_margin"
             android:background="?android:selectableItemBackgroundBorderless"
-            android:clickable="true"
             android:contentDescription="@string/cd_favorite_icon"
-            android:focusable="true"
             android:padding="4dp"
-            app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
-            app:layout_constraintEnd_toStartOf="@+id/ivShare"
-            app:layout_constraintTop_toTopOf="@+id/btOpenLink"
+            app:layout_constraintBottom_toBottomOf="@+id/btnOpenLink"
+            app:layout_constraintEnd_toStartOf="@+id/ibShare"
+            app:layout_constraintTop_toTopOf="@+id/btnOpenLink"
             app:srcCompat="@drawable/ic_favorite" />
-        <!-- Referência: Incluir o Efeito de Ripple (https://stackoverflow.com/a/61012286/3072570) -->
 
-        <ImageView
-            android:id="@+id/ivShare"
+        <ImageButton
+            android:id="@+id/ibShare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/default_margin"
             android:background="?android:selectableItemBackgroundBorderless"
-            android:clickable="true"
             android:contentDescription="@string/cd_share_icon"
-            android:focusable="true"
             android:padding="4dp"
-            app:layout_constraintBottom_toBottomOf="@+id/btOpenLink"
+            app:layout_constraintBottom_toBottomOf="@+id/btnOpenLink"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/btOpenLink"
+            app:layout_constraintTop_toTopOf="@+id/btnOpenLink"
             app:srcCompat="@drawable/ic_share" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
